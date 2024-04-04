@@ -19,8 +19,7 @@ jobs:
         with:
           base_image: raspios_lite:2022-04-04
           commands: |
-            apt-get update -y \ 
-            && apt-get -y --no-install-recommends install \
+            apt-get -y --no-install-recommends install \
             build-essential \
             lsb-release \
             && apt-get clean \
